@@ -1,6 +1,6 @@
 # mcp-eval-baseline
 
-Shared [mcp-assert](https://github.com/blackwell-systems/mcp-assert) baseline eval suite for the wyre-technology MCP server fleet.
+Shared [mcp-assert](https://github.com/blackwell-systems/mcp-assert) baseline eval suite for the WYRE-AI MCP server fleet.
 
 ## What this enforces
 
@@ -37,7 +37,7 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - run: npm run build --if-present
-      - uses: wyre-technology/mcp-eval-baseline@main
+      - uses: WYRE-AI/mcp-eval-baseline@main
         with:
           entry: dist/index.js          # or dist/entry.js — your build artifact
           canary-tool: foo_list_things  # any read-only tool from your server
